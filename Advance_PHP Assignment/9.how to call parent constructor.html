@@ -1,0 +1,45 @@
+<!--9.how to call parent constructor-->
+
+* If child class defines a constructor,user can't run directly parent constructor in child class.
+*In order to run a parent constructor, a call to parent::__construct()
+ within the child constructor is required.
+
+
+ <?php
+   class demo
+   {
+      public function __construct()
+      {
+         echo "I am in Tutorials Point".;
+      }
+   }
+   class display extends demo
+   {
+      public function __construct()
+      {
+         parent::__construct();
+         echo "I am not in Tutorials Point";
+      }
+   }
+$obj = new display();
+?>
+
+* If child class not defines the constructor then it may inherit from parent class just like normal class.
+* user may not declare class as a private.
+
+*example ::
+<?php
+
+class getdata
+{
+    public function __construct()
+    {
+        echo "i m constructor";
+    }
+    class display extends getdata
+    {
+        $odj= new display();
+    }
+}
+
+?>

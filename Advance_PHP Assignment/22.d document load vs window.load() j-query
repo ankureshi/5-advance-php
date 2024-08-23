@@ -1,0 +1,25 @@
+<!--22.d document load vs window.load() j-query.-->
+
+* document.load::
+
+* document.load() is load into a body of webpage.
+* user input any program and web page saw the result.
+* it provides functionality globally to the document,like how to obtain 
+  the page's url and create new element in the document.
+* the DOM (Document Object Model) is fully loaded and ready for JavaScript code to execute. 
+  It doesn't wait for images, stylesheets, or other external resources to finish loading.
+
+
+
+* window.load()::
+
+  * this function()is used to load users output on a server or new tab or new site
+    as per user require.
+  * it contains a dom documents.
+  * when the entire page, including all dependent resources such as images, stylesheets, and iframes, 
+    have been fully loaded. 
+  * This is less common now as it was more crucial in earlier days when images and other 
+    resources could significantly delay the page readiness.
+
+
+
